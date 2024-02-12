@@ -7,10 +7,11 @@
     margin: 0;
     box-sizing: border-box;
     scroll-margin: smooth;
+    scroll-behavior: smooth;
 }
 
 .max-container {
-    margin: 0px 130px;
+    padding: 0px 130px;
 }
 
 @layer utilities {

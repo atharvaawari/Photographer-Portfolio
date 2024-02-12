@@ -1,11 +1,11 @@
-import React from 'react'
-import { facebook, instagram, logo, menu, search } from '../assets/icons'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { facebook, instagram, logo, menu, search } from '../assets/icons';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
-        <header className='max-container py-5'>
-            <nav className='flex justify-between'>
+        <header className='sticky -top-3 bg-white w-full py-8 '>
+            <nav className='max-container flex justify-between'>
                 <div>
                     <Link to="/">
                         <img
