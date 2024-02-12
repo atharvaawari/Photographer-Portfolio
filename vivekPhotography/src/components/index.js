@@ -1,7 +1,7 @@
-import About from './About'
-import Book from './Book'
-import Contact from './Contact'
-import Home from './Home'
-import Layout from './Layout'
+import About from './About.jsx'
+import Book from './Book.jsx'
+import Contact from './Contact.jsx'
+import Home from './Home.jsx'
+import Layout from './Layout.jsx'
 
-export default {About, Book, Contact, Home, Layout } 
+export {About, Book, Contact, Home, Layout} 
