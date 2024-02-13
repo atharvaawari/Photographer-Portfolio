@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { frontImage } from '../assets/images'
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
-import { sliderData } from '../constants'
+import { sliderData } from '../constants';
+import {RxDotFilled} from 'react-icons/rx';
 
 const Hero = () => {
 
@@ -13,9 +14,13 @@ const Hero = () => {
     setCurrentIndex(newIndex);  
   }
   const nextSlide = () => {
-    const isFirstSlide = currentIndex ===4;
-    const newIndex = isFirstSlide ? sliderData.length +1 : currentIndex +1;
+    const isLastSlide = currentIndex ===sliderData.length -1 ;
+    const newIndex = isLastSlide ? 0 : currentIndex +1;
     setCurrentIndex(newIndex);
+  }
+
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex( slideIndex )
   }
 
   return (
@@ -40,6 +45,18 @@ const Hero = () => {
           >
             <BsChevronCompactRight onClick={nextSlide} size={30} />
           </div>
+
+          <div className='flex top-0 justify-start gap-0.2'>
+            {sliderData.map( (slide, slideIndex) =>(
+              <div 
+               key={slideIndex}
+               onClick={()=> goToSlide(slideIndex)}
+               className='w-[120px] h-[80px] cursor-pointer hover:scale-105 transition-all '>
+                <img src={slide.url} alt="images"  />
+              </div>
+            ) )}
+          </div>
+
         </div>
       </>
       )
