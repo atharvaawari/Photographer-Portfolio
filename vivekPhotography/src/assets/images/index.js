@@ -19,6 +19,12 @@ import bigImg2 from './bigImg2.jpeg';
 import frontImage from './frontImage.jpg';
 import book1 from './book1.jpeg';
 
+import hero1 from './hero1.jpg';
+import hero2 from './hero2.jpeg';
+import hero3 from './hero3.jpg';
+import hero4 from './hero4.jpeg';
+import hero5 from './hero5.jpeg';
+
 export {
     groupImg1,
     groupImg2,
@@ -37,5 +43,10 @@ export {
     mainImg4,
     bigImg2,
     frontImage,
-    book1
+    book1,
+    hero1,
+    hero2,
+    hero3,
+    hero4,
+    hero5,
 }

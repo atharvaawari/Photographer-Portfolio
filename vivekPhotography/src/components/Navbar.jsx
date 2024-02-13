@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
-        <header className='sticky -top-3 bg-white w-full py-8 '>
-            <nav className='max-container flex justify-between'>
-                <div>
+        <header className=' sticky -top-3 bg-white w-full z-10'>
+            <nav className='flex justify-between justify-items-center px-[120px] py-10'>
+                <div className='flex justify-self-center'>
                     <Link to="/">
                         <img
                             src={menu}
                             alt="menu"
                             width={25}
-                            height={25}
+                            height={10}
                         />
                     </Link>
                 </div>
@@ -20,22 +20,23 @@ function Navbar() {
                 <div>
                     <Link to="/">
                         <img
+                            className=' items-center'
                             src={logo}
                             alt='logo'
-                            width={130}
+                            width={117}
                             height={20}
                         />
                     </Link>
                 </div>
 
-                <ul className='flex gap-5'>
+                <ul className='flex gap-2'>
                     <li>
                         <Link to="/facebook">
                             <img
                                 src={facebook}
                                 alt="fb"
-                                width={30}
-                                height={20}
+                                width={23}
+                                height={5}
                             />
                         </Link>
                     </li>
@@ -44,8 +45,8 @@ function Navbar() {
                             <img
                                 src={instagram}
                                 alt="Insta"
-                                width={30}
-                                height={20}
+                                width={23}
+                                height={5}
                             />
                         </Link>
                     </li>
@@ -54,8 +55,8 @@ function Navbar() {
                             <img
                                 src={search}
                                 alt="search"
-                                width={30}
-                                height={20}
+                                width={23}
+                                height={5}
                             />
                         </Link>
                     </li>
