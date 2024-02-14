@@ -1,6 +1,7 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import Info from '../components/Info';
 
 
 
@@ -14,8 +15,12 @@ const Home = () => {
       <Navbar/>
       </section>
 
-      <section>
+      <section className='padding'>
         <Hero/>
+      </section>
+
+      <section className='padding h-[635px] max-container'>
+        <Info/>
       </section>
     </>
   )
