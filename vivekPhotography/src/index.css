@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,15 +19,24 @@
     padding: 0px 120px;
 } */
 .nav-container {
-    padding: 55px 120px;
+    padding: 0px 120px;
+}
+
+.font-Inter {
+    font-family: Inter, sans-serif;
 }
 
 @layer utilities {
+    
     .max-container {
-        @apply sm:px-24 px-[120px];
+        @apply sm:px-[120px] px-3;
     }
 
     .padding {
-        @apply  py-10;
-      }
+        @apply py-10;
+    }
+    .first-color {
+        @apply text-[#F96D6D];
+    }
+
 }

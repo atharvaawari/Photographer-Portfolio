@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
-        <header className=' sticky -top-3 bg-white w-full z-10'>
-            <nav className='flex justify-between justify-items-center px-[120px] py-10'>
+        <header className='sticky -top-3 bg-white w-full z-10 nav-container'>
+            <nav className='flex items-center justify-between  py-10'>
                 <div className='flex justify-self-center'>
                     <Link to="/">
                         <img
                             src={menu}
                             alt="menu"
-                            width={25}
+                            width={30}
                             height={10}
                         />
                     </Link>
@@ -20,7 +20,7 @@ function Navbar() {
                 <div>
                     <Link to="/">
                         <img
-                            className=' items-center'
+                            className='ml-12 '
                             src={logo}
                             alt='logo'
                             width={117}

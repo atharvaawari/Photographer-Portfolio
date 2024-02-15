@@ -21,5 +21,5 @@ export const sliderData = [
 
 export const photosBlog = [
     {
-        url:groupImg1 }, { url:groupImg2 }, { url:groupImg3 }, { url:groupImg4 }, { url:groupImg5, }, { url:groupImg6 }, { url:groupImg6 }, { url:groupImg7 }, { url:groupImg8 }, { url:groupImg9 }, { url:groupImg10 }
+        url:groupImg1, id:1 }, { url:groupImg2, id:2 }, { url:groupImg3, id:3 }, { url:groupImg4, id:4 }, { url:groupImg5, id:5 }, { url:groupImg6, id:6 }, { url:groupImg7, id:7 }, { url:groupImg8, id:8 }, { url:groupImg9, id:9 }, { url:groupImg10, id:10 }
 ]
