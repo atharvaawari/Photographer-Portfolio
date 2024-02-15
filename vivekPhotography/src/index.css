@@ -19,7 +19,7 @@
     padding: 0px 120px;
 } */
 .nav-container {
-    padding: 0px 120px;
+    padding: 2px 120px;
 }
 
 .font-Inter {
@@ -29,11 +29,11 @@
 @layer utilities {
     
     .max-container {
-        @apply sm:px-[120px] px-3;
+        @apply lg:px-[120px] sm:px-2;
     }
 
-    .padding {
-        @apply py-10;
+    .padding-y {
+        @apply py-10 ;
     }
     .first-color {
         @apply text-[#F96D6D];

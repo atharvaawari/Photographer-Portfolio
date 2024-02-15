@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Info from '../components/Info';
 import Cards from '../sections/Cards';
@@ -9,17 +8,19 @@ const Home = () => {
 
   return (
     <>
-      <section className='padding'>
+      <main >
+      <section className='padding-y max-container '>
         <Hero/>
       </section>
 
-      <section className='padding max-container mt-10'>
+      <section className='padding-y max-container mt-10'>
         <Info/>
       </section>
       
-      <section className='padding max-container'>
+      <section className='padding-y max-container'>
         <Cards/>
       </section>
+      </main>
     </>
   )
 }

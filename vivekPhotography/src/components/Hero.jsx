@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import { frontImage } from '../assets/images'
+import React, { useState, useEffect } from 'react'
+// import { frontImage } from '../assets/images'
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 import { sliderData } from '../constants';
-import {RxDotFilled} from 'react-icons/rx';
+// import {RxDotFilled} from 'react-icons/rx';
 
 const Hero = () => {
 
@@ -22,11 +22,23 @@ const Hero = () => {
   const goToSlide = (slideIndex) => {
     setCurrentIndex( slideIndex )
   }
+  async function changeSlide() {
+    await setInterval((currentIndex) => {
+      for(let i =currentIndex; i<= currentIndex.length; i++ ){
+        setCurrentIndex(currentIndex + 1)
+      }
+    }, 1000);
+  }
+
+  useEffect(() => {
+    changeSlide();
+  }, [currentIndex])
+  
 
   return (
 
     <>
-        <div className='lg:w-[1300px] lg:h-[700px] w-[450px] h-[300px] m-auto '>
+        <div className='lg:w-[1300px] lg:h-[700px] w-[450px] h-[300px] m-auto px-2 '>
           <div
             style={{ backgroundImage: `url(${sliderData[currentIndex].url})` }}
             className='w-full h-full bg-center bg-cover duration-500'
