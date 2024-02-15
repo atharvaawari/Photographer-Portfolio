@@ -26,7 +26,7 @@ const Hero = () => {
   return (
 
     <>
-        <div className='sm:max-w-[1300px] sm:h-[700px] max-w-[400px] h-[250px] w-full m-auto relative '>
+        <div className='lg:w-[1300px] lg:h-[700px] w-[450px] h-[300px] m-auto '>
           <div
             style={{ backgroundImage: `url(${sliderData[currentIndex].url})` }}
             className='w-full h-full bg-center bg-cover duration-500'
