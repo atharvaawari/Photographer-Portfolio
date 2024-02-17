@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
-        <header className='sm:sticky -top-3 bg-white w-full z-10 nav-container '>
-            <nav className='flex items-center sm:justify-between sm:py-10 justify-end'>
+        <header className='sm:sticky -top-3 bg-white w-full z-10 nav-container'>
+            <nav className=' flex lg:flex-row w-full justify-between py-8 items-center'>
                 <div className='flex justify-self-center'>
                     <Link to="/">
                         <img

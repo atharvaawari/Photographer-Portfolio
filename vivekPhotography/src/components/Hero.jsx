@@ -6,71 +6,60 @@ import { sliderData } from '../constants';
 
 const Hero = () => {
 
-  const [currentIndex, setCurrentIndex ] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0)
 
-  const prevSlide = ()=> {
+  const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? sliderData.length -1 : currentIndex - 1;
-    setCurrentIndex(newIndex);  
+    const newIndex = isFirstSlide ? sliderData.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
   }
   const nextSlide = () => {
-    const isLastSlide = currentIndex ===sliderData.length -1 ;
-    const newIndex = isLastSlide ? 0 : currentIndex +1;
+    const isLastSlide = currentIndex === sliderData.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   }
 
   const goToSlide = (slideIndex) => {
-    setCurrentIndex( slideIndex )
-  }
-  async function changeSlide() {
-    await setInterval((currentIndex) => {
-      for(let i =currentIndex; i<= currentIndex.length; i++ ){
-        setCurrentIndex(currentIndex + 1)
-      }
-    }, 1000);
+    setCurrentIndex(slideIndex)
   }
 
-  useEffect(() => {
-    changeSlide();
-  }, [currentIndex])
-  
 
   return (
 
     <>
-        <div className='lg:w-[1300px] lg:h-[700px] w-[450px] h-[300px] m-auto px-2 '>
-          <div
-            style={{ backgroundImage: `url(${sliderData[currentIndex].url})` }}
-            className='w-full h-full bg-center bg-cover duration-500'
-          ></div>
+      <div className='lg:w-[1300px] lg:h-[700px] w-[450px] h-[300px] m-auto px-2 '>
+        <div
+          style={{ backgroundImage: `url(${sliderData[currentIndex].url})` }}
+          className='w-full h-full bg-center bg-cover duration-500'
+        ></div>
 
-          {/* left arrow */}
-          <div 
-            className='absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'
-           >
-            <BsChevronCompactLeft onClick={prevSlide} size={30} />
-          </div>
-
-          {/* right arrow  */}
-          <div 
-            className='absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'
-          >
-            <BsChevronCompactRight onClick={nextSlide} size={30} />
-          </div>
-
-          <div className='flex top-0 justify-start gap-0.2'>
-            {sliderData.map( (slide, slideIndex) =>(
-              <div 
-               key={slideIndex}
-               onClick={()=> goToSlide(slideIndex)}
-               className='w-[120px] h-[80px] cursor-pointer hover:scale-105 transition-all '>
-                <img src={slide.url} alt="images"  />
-              </div>
-            ) )}
-          </div>
+        {/* left arrow */}
+        <div
+          className='absolute top-[27rem] -translate-x-0 translate-y-[100%] left-[9.5%] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'
+        >
+          <BsChevronCompactLeft onClick={prevSlide} size={30} />
         </div>
-      </>
-      )
+
+        {/* right arrow  */}
+        <div
+          className='absolute top-[27rem] -translate-x-0 translate-y-[100%] right-[8%] text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'
+        >
+          <BsChevronCompactRight onClick={nextSlide} size={30} />
+        </div>
+
+        <div className='flex top-0 justify-start gap-0.2'>
+          {sliderData.map((slide, slideIndex) => (
+            <div
+              key={slideIndex}
+              onClick={() => goToSlide(slideIndex)}
+              className='w-[120px] h-[80px] cursor-pointer hover:scale-105 transition-all '>
+              <img src={slide.url} alt="images" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  )
 }
 
 export default Hero
