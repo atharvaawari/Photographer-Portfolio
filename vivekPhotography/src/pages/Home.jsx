@@ -2,6 +2,8 @@ import React from 'react'
 import Hero from '../components/Hero';
 import Info from '../components/Info';
 import Cards from '../sections/Cards';
+import BT from '../components/BT';
+import PhotoGallary from '../components/PhotoGallary';
 
 
 const Home = () => {
@@ -20,6 +22,15 @@ const Home = () => {
       <section className='padding-y max-container'>
         <Cards/>
       </section>
+
+      <section className='padding-y max-container'>
+        <BT/>
+      </section>
+
+      <section className='padding-y max-container'>
+        <PhotoGallary/>
+      </section>
+      
       </main>
     </>
   )

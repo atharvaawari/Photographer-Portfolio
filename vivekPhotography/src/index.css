@@ -44,11 +44,8 @@
     .first-color {
         @apply text-[#F96D6D];
     }
-    
-
-    @media (min-width: 430px) {
-        .xs\:flex-col {
-            flex-direction: column;
-        }
+    .main-button {
+        @apply text-white bg-[#F96D6D] px-5 py-2 rounded-xl
     }
+    
 }
