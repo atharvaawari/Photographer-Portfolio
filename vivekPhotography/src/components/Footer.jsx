@@ -55,11 +55,11 @@ const Footer = () => {
                 </h1>
             </div>
             <div className='flex gap-x-0.5 items-center mx-2 my-2 font-light'>
-                <img 
-                src={copyright} 
-                alt="copyright"
-                width={20}
-                height={2}
+                <img
+                    src={copyright}
+                    alt="copyright"
+                    width={20}
+                    height={2}
                 />
                 <h6>
                     copyrights. All rights are reserved.
