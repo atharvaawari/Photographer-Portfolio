@@ -1,10 +1,97 @@
 import React from 'react'
+import { book1 } from '../assets/images'
 
 const Book = () => {
   return (
-    <div>
-      <h1>Book</h1>
-    </div>
+    <section className='max-container'>
+      <div className='flex justify-center max-w-[] max-h-[600px]'>
+        <img
+          src={book1}
+          alt="bigImage"
+          width={900}
+        />
+      </div>
+
+      <div className='padding-y max-container mt-10'>
+        <h1 className='font-light text-2xl'>
+          Be the star in your own story
+        </h1>
+        <hr className='mt-5' />
+        <h2 className='mt-5 text-lg font-extralight'>
+          Hello, from Atharva photography! <br />
+          This form will take you few minutes  to fill in .
+        </h2>
+        <h2 className='mt-5 text-lg font-extralight'>
+          Tell us about yourself and your event, and we’ll get back to you shortly :)
+        </h2>
+        <hr className='mt-5' />
+
+        <h1 className=' font-normal text-4xl mt-5'>Tell us about yourself</h1>
+
+        <div className='mt-5'>
+          <label for="Your-name" class="block text-sm font-medium leading-6 text-gray-900">Your Name</label>
+          <div class="mt-2.5">
+            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-[50%] rounded-md border-0 px-3.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 shadow-lg" />
+          </div>
+        </div>
+
+        <div className='mt-5'>
+          <label for="Email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
+          <div class="mt-2.5">
+            <input type="email" name="first-name" id="first-name" autocomplete="given-name" class="block w-[50%] rounded-md border-0 px-3.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 shadow-lg" />
+          </div>
+        </div>
+
+        <div className='mt-5'>
+          <label for="Phone Number" class="block text-sm font-medium leading-6 text-gray-900">Phone Number</label>
+          <div class="mt-2.5">
+            <input type="Number" name="first-name" id="first-name" autocomplete="given-name" class="block w-[30%] rounded-md border-0 px-3.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 shadow-lg" />
+          </div>
+        </div>
+
+        <div className='mt-5'>
+          <label for="City Name" class="block text-sm font-medium leading-6 text-gray-900">City Name</label>
+          <div class="mt-2.5">
+            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-[30%] rounded-md border-0 px-3.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6 shadow-lg" />
+          </div>
+        </div>
+
+        <div className='mt-5'>
+          <label for="Wedding location address" class="block text-sm font-medium leading-6 text-gray-900">Wedding Location Address</label>
+          <div class="mt-2.5">
+            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-[40%] rounded-md border-0 px-3.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 shadow-lg" />
+          </div>
+        </div>
+
+        <div className='mt-5'>
+          <label for="Requirements" class="block text-sm font-medium leading-6 text-gray-900">Requirements</label>
+          <div class="mt-2.5">
+            <input type="textarea" name="first-name" id="first-name" autocomplete="given-name" class="block w-[35%] h-[80px] rounded-md border-0 px-3.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6 shadow-lg" />
+          </div>
+        </div>
+
+        <div className='mt-5'>
+          <label for="Requirements" class="block text-sm font-medium leading-6 text-gray-900">What event do you want to invite us?</label>
+          <div class="mt-2.5">
+            <input type="textarea" name="first-name" id="first-name" autocomplete="given-name" class="block w-[40%] rounded-md border-0 px-3.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6 shadow-lg" />
+          </div>
+        </div>
+
+        <div className='mt-5'>
+          <label for="Refrence" class="block text-sm font-medium leading-6 text-gray-900">Refrence of</label>
+          <div class="mt-2.5">
+            <input type="textarea" name="first-name" id="first-name" autocomplete="given-name" class="block w-[40%] rounded-md border-0 px-3.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6 shadow-lg" />
+          </div>
+        </div>
+
+        <button
+          className='main-button mt-10 w-[40%]'
+        >
+          Submit
+        </button>
+      </div>
+
+    </section>
   )
 }
 
