@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <section>
 
-            <div className='padding-y max-container '>
+            <div className='padding-y max-container px-5'>
                 <div className='flex flex-col justify-center gap-y-5'>
                     <hr />
                     <button className=' text-[#F96D6D] underline text-xl mt-5'>
