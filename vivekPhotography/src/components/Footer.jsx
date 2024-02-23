@@ -1,16 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { copyright, facebook, instagram } from '../assets/icons';
+import { useNavigate } from 'react-router-dom';
 
 
 const Footer = () => {
+    const navigate = useNavigate();
+
     return (
         <section>
 
             <div className='padding-y max-container px-5'>
                 <div className='flex flex-col justify-center gap-y-5'>
                     <hr />
-                    <button className=' text-[#F96D6D] underline text-xl mt-5'>
+                    <button 
+                    onClick={ ()=>navigate("/bookusnow") }
+                    className=' text-[#F96D6D] underline text-xl mt-5'>
                         Book us now
                     </button>
 

@@ -3,8 +3,11 @@ import { bigImg1, bigImg2 } from '../assets/images'
 import { PhotoGallaryblog } from '../constants';
 import Photoblog from './Photoblog';
 import { logo } from '../assets/icons';
+import { useNavigate } from 'react-router-dom';
 
 const PhotoGallary = () => {
+
+    const navigate = useNavigate();
   return (
     <div className='flex flex-col items-center gap-10'>
       <div className='flex flex-col items-center gap-4'>
@@ -33,7 +36,9 @@ const PhotoGallary = () => {
 
       <div className=' flex flex-col gap-3 items-center mt-5'>
         <h2 className='text-black text-xl'>For more details</h2>
-        <button className='main-button'>
+        <button 
+        onClick={()=>navigate("/contact")}
+        className='main-button'>
           Contact Us
         </button>
         <div className='mt-6'>

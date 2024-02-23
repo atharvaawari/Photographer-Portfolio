@@ -29,65 +29,106 @@ const Book = () => {
 
           <h1 className=' font-normal text-4xl mt-5'>Tell us about yourself</h1>
 
-          <div className='mt-5'>
-            <label htmlFor="Your-name" className="block text-sm font-medium leading-6 text-gray-900">Your Name</label>
-            <div className="mt-2.5">
-              <input type="text" name="first-name" id="first-name" className="block w-[50%] rounded-md border-0 px-3.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 shadow-lg" />
+          <form action="">
+            <div className='mt-5'>
+              <label htmlFor="Your-name" className="block text-lg font-medium leading-6 text-gray-900">Your Name</label>
+              <div className="mt-2.5">
+                <input type="text" name="first-name" id="first-name" className="block w-[50%] rounded-md border-0 px-3.5 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 shadow-lg" />
+              </div>
             </div>
-          </div>
 
-          <div className='mt-5'>
-            <label htmlFor="Email" className="block text-sm font-medium leading-6 text-gray-900">Email</label>
-            <div className="mt-2.5">
-              <input type="email" name="first-name" id="first-name" className="block w-[50%] rounded-md border-0 px-3.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 shadow-lg" />
+            <div className='mt-5'>
+              <label htmlFor="Email" className="block text-lg font-medium leading-6 text-gray-900">Email</label>
+              <div className="mt-2.5">
+                <input type="email" name="first-name" id="first-name" className="block w-[50%] rounded-md border-0 px-3.5 py-1.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 shadow-lg" />
+              </div>
             </div>
-          </div>
 
-          <div className='mt-5'>
-            <label htmlFor="Phone Number" className="block text-sm font-medium leading-6 text-gray-900">Phone Number</label>
-            <div className="mt-2.5">
-              <input type="Number" name="first-name" id="first-name" className="block w-[30%] rounded-md border-0 px-3.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 shadow-lg" />
+            <div className='mt-5'>
+              <label htmlFor="Phone Number" className="block text-lg font-medium leading-6 text-gray-900">Phone Number</label>
+              <div className="mt-2.5">
+                <input type="Number" name="first-name" id="first-name" className="block w-[30%] rounded-md border-0 px-3.5 py-1.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 shadow-lg" />
+              </div>
             </div>
-          </div>
 
-          <div className='mt-5'>
-            <label htmlFor="City Name" className="block text-sm font-medium leading-6 text-gray-900">City Name</label>
-            <div className="mt-2.5">
-              <input type="text" name="first-name" id="first-name" className="block w-[30%] rounded-md border-0 px-3.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6 shadow-lg" />
+            <div className='mt-5'>
+              <label
+                htmlFor="City Name"
+                className="block text-lg font-medium leading-6 text-gray-900">
+                City Name
+              </label>
+              <div className="mt-2.5">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  className="block w-[30%] rounded-md border-0 px-3.5 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset  sm:text-sm sm:leading-6 shadow-lg" />
+              </div>
             </div>
-          </div>
 
-          <div className='mt-5'>
-            <label htmlFor="Wedding location address" className="block text-sm font-medium leading-6 text-gray-900">Wedding Location Address</label>
-            <div className="mt-2.5">
-              <input type="text" name="first-name" id="first-name" className="block w-[40%] rounded-md border-0 px-3.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 shadow-lg" />
+            <div className='mt-5'>
+              <label
+                htmlFor="Wedding location address"
+                className="block text-lg font-medium leading-6 text-gray-900">
+                Wedding Location Address
+              </label>
+              <div className="mt-2.5">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  className="block w-[40%] rounded-md border-0 px-3.5 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 shadow-lg" />
+              </div>
             </div>
-          </div>
 
-          <div className='mt-5'>
-            <label htmlFor="Requirements" className="block text-sm font-medium leading-6 text-gray-900">Requirements</label>
-            <div className="mt-2.5">
-              <input type="textarea" name="first-name" id="first-name" className="block w-[35%] h-[80px] rounded-md border-0 px-3.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6 shadow-lg" />
+            <div className='mt-5'>
+              <label
+                htmlFor="Requirements"
+                className="block text-lg font-medium leading-6 text-gray-900">
+                Requirements
+              </label>
+              <div className="mt-2.5">
+                <input
+                  type="textarea"
+                  name="first-name"
+                  id="first-name"
+                  className="block w-[35%] h-[80px] rounded-md border-0 px-3.5 py-1.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6 shadow-lg" />
+              </div>
             </div>
-          </div>
 
-          <div className='mt-5'>
-            <label htmlFor="Requirements" className="block text-sm font-medium leading-6 text-gray-900">What event do you want to invite us?</label>
-            <div className="mt-2.5">
-              <input type="textarea" name="first-name" id="first-name" className="block w-[40%] rounded-md border-0 px-3.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6 shadow-lg" />
+            <div className='mt-5'>
+              <label
+                htmlFor="Requirements"
+                className="block text-lg font-medium leading-6 text-gray-900">
+                What event do you want to invite us?
+              </label>
+              <div className="mt-2.5">
+                <input
+                  type="textarea"
+                  name="first-name"
+                  id="first-name"
+                  className="block w-[40%] rounded-md border-0 px-3.5 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6 shadow-lg" />
+              </div>
             </div>
-          </div>
 
-          <div className='mt-5'>
-            <label htmlFor="Refrence" className="block text-sm font-medium leading-6 text-gray-900">Refrence of</label>
-            <div className="mt-2.5">
-              <input type="textarea" name="first-name" id="first-name" className="block w-[40%] rounded-md border-0 px-3.5  text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6 shadow-lg" />
+            <div className='mt-5'>
+              <label
+                htmlFor="Refrence"
+                className="block text-lg font-medium leading-6 text-gray-900">
+                Refrence of
+              </label>
+              <div className="mt-2.5">
+                <textarea 
+                  type="textarea"
+                  name="first-name"
+                  id="first-name"
+                  className="block w-[40%] rounded-md border-0 px-3.5 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 sm:text-sm sm:leading-6 shadow-lg" />
+              </div>
             </div>
-          </div>
+          </form>
 
           <button
-            className='main-button mt-10 w-[40%]'
-          >
+            className='main-button mt-10 w-[40%] text-2xl'>
             Submit
           </button>
         </div>
