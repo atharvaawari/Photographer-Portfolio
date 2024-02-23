@@ -1,8 +1,10 @@
 import React from 'react';
 import { facebook, instagram, logo, menu, search } from '../assets/icons';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Navbar() {
+    const navigate = useNavigate();
+
     return (
         <>
         <header className='sm:sticky -top-3 bg-white w-full z-10 nav-container px-5'>
@@ -26,6 +28,7 @@ function Navbar() {
                             alt='logo'
                             width={117}
                             height={20}
+                            onClick={()=> navigate("/home")}
                         />
                     </Link>
                 </div>
