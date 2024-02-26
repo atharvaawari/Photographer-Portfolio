@@ -22,7 +22,7 @@ const Hero = () => {
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex)
   }
-
+  
 
   return (
 
