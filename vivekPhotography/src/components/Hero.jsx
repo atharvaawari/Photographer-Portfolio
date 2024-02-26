@@ -8,6 +8,18 @@ const Hero = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0)
 
+  useEffect( ()=>{
+    const timer = setTimeout(()=>{
+      if(currentIndex === sliderData.length-1) {
+        setCurrentIndex(0)
+      } else{
+        setCurrentIndex(currentIndex + 1)
+      }
+    },3000)
+
+    return() => clearTimeout(timer)
+  },[currentIndex])
+
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? sliderData.length - 1 : currentIndex - 1;
