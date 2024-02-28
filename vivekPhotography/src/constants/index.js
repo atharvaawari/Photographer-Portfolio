@@ -41,3 +41,10 @@ export const PhotoGallaryblog = [
         text:"Reception"
     }
 ]
+
+export const menuList = [
+    { name: "Home", Link:"/"},
+    { name: "Photos Gallery", Link:"/photoGallery"},
+    { name: "Video Gallery", Link:"/videoGallery"},
+    { name: "Book Us Now", Link:"/bookusnow"},
+]

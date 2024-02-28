@@ -4,6 +4,7 @@ import Info from '../components/Info';
 import Cards from '../sections/Cards';
 import BT from '../components/BT';
 import PhotoGallary from '../components/PhotoGallary';
+import Menu from '../components/Menu';
 
 
 const Home = () => {
@@ -11,10 +12,14 @@ const Home = () => {
   return (
     <>
       <main >
+      <section>
+        <Menu/>
+      </section>
+
       <section className='padding-y max-container '>
         <Hero/>
       </section>
-
+      
       <section className='padding-y max-container mt-10'>
         <Info/>
       </section>

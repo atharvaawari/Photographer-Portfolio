@@ -1,9 +1,16 @@
 import React from 'react';
-import { facebook, instagram, logo, menu, search } from '../assets/icons';
+import { facebook, instagram, logo, search } from '../assets/icons';
 import { Link, useNavigate } from 'react-router-dom';
+import {menuList} from '../constants/index'
+import Hamburger from 'hamburger-react'
+import Menu from './Menu';
 
 function Navbar() {
     const navigate = useNavigate();
+
+    // const openMenu = function() {
+
+    // }
 
     return (
         <>
@@ -11,11 +18,23 @@ function Navbar() {
             <nav className=' flex lg:flex-row w-full justify-between py-8 items-center'>
                 <div className='flex justify-self-center'>
                     <Link to="/">
-                        <img
+                        {/* <img
                             src={menu}
                             alt="menu"
                             width={30}
                             height={10}
+                        /> */}
+                        <Hamburger
+                        
+                        onToggle={toggle=> {
+                            if(toggle){
+                                // openMenu
+                                
+                            } else{
+                                // closeMenu
+                            }
+                        }}
+
                         />
                     </Link>
                 </div>
