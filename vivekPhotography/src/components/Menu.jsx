@@ -6,7 +6,7 @@ const Menu = () => {
     <div>
         <div className=' bg-black/20 h-screen w-[15%] fixed z-40 top-0 left-[122px]'>
             {menuList.map((item, index)=>{
-                <li key={index}>{menuList}</li>
+                <li key={index}>{menuList.item}</li>
             } )}
         </div>
     </div>

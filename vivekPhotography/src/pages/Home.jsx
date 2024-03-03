@@ -11,10 +11,7 @@ const Home = () => {
 
   return (
     <>
-      <main >
-      <section>
-        <Menu/>
-      </section>
+      <main>
 
       <section className='padding-y max-container '>
         <Hero/>
